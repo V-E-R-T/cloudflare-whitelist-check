@@ -3,7 +3,7 @@
 ip4list=$(wget -q -O - "https://www.cloudflare.com/ips-v4" | md5sum | cut -d ' ' -f 1)
 ip6list=$(wget -q -O - "https://www.cloudflare.com/ips-v6" | md5sum | cut -d ' ' -f 1)
 
-if [ $ip4list != "e91454d4b4bce1d29828cd4bf99ae1cd" ]; then
+if [ $ip4list != "e10a25d780863a93260f9f7799a7fbd3" ]; then
     echo "ip whitelist update needed"
     exit 1;
 fi
